@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/thomasporter/Desktop/Grand_Circus/Amazon_Bootcamp/Labs/Unit_2/2.5_strings_and_methods/.metadata/.plugins/org.eclipse.jdt.core
+2979345268.index
+1865797976.index
+1816963510.index

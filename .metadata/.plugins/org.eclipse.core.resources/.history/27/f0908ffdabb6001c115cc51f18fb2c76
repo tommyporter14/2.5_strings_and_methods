@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class strings_and_methods {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter a word:");
+		Scanner scnr = new Scanner(System.in);
+		String userWord = scnr.nextLine();
+		String userCapWord = capitalize(userWord);
+		System.out.println(userCapWord);
+		
+		System.out.println("Please enter a phrase with 'Waldo' in it (case sensitive):");
+		String userPhrase = scnr.nextLine();
+		int indexWaldo = wheresWaldo(userPhrase);
+		System.out.println(indexWaldo);
+		
+		System.out.println("Please enter word one:");
+		String userWordOne = scnr.nextLine();
+		System.out.println("Please enter word two:");
+		String userWordTwo = scnr.nextLine();
+		String alphabetical = firstThingsFirst(userWordOne, userWordTwo);
+		System.out.println(alphabetical);
+		
+		scnr.close();
+	}
+
+	public static String capitalize (String word)
+	{
+		String capWord = word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+		return capWord;
+	}
+
+	public static int wheresWaldo (String phrase)
+	{
+		int index = phrase.indexOf("Waldo");
+		return index;
+	}
+
+	public static String firstThingsFirst (String a, String b)
+	{
+		String order = "";
+		int compare = a.compareTo(b);
+			if(compare < 0)
+			{
+				String order = a + b;
+			}
+			else if (compare > 0)
+			{
+				String order = b + a;
+			}
+			else 
+			{
+				String order = "Both words start witht the same letter";
+			}
+		return order;
+	}
+}

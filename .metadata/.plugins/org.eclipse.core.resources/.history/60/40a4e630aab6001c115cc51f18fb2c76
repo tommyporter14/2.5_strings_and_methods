@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class strings_and_methods {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter a word:");
+		Scanner scnr = new Scanner(System.in);
+		String userWord = scnr.nextLine();
+		String userCapWord = capitalize(userWord);
+		System.out.println(userCapWord);
+		
+		System.out.println("Please enter a phrase with 'Waldo' in it (case sensitive):");
+		String userPhrase = scnr.nextLine();
+		int indexWaldo = wheresWaldo(userPhrase);
+		System.out.println(indexWaldo);
+		
+		scnr.close();
+	}
+
+	public static String capitalize (String word)
+	{
+		String capWord = word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+		return capWord;
+	}
+
+	public static int wheresWaldo (String phrase)
+	{
+		int index = phrase.indexOf("Waldo");
+		return index;
+	}
+
+}
