@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class strings_and_methods {
 
-	public static void main(String[] args) {
+	public  void main(String[] args) {
 
 	StringMethods sm = new StringMethods();
 		
@@ -43,11 +43,6 @@ public class strings_and_methods {
 		System.out.println("(EX7) Please enter a word:");//prompt/print code ex 7
 		String userInput = scnr.nextLine();
 		sm.letterize(userInput);
-		
-		System.out.println("EX8) Please enter a phrase:");//prompt/print code ex 8
-		String userInput2 = scnr.nextLine();
-		String camelCase = sm.toCamelCase(userInput2);
-		System.out.println(camelCase);
 		
 		scnr.close();
 	}	 

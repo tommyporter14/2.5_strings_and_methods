@@ -44,7 +44,7 @@ public class strings_and_methods {
 		String userInput = scnr.nextLine();
 		sm.letterize(userInput);
 		
-		System.out.println("EX8) Please enter a phrase:");//prompt/print code ex 8
+		System.out.println("EX8) Please enter a phrase:");
 		String userInput2 = scnr.nextLine();
 		String camelCase = sm.toCamelCase(userInput2);
 		System.out.println(camelCase);
