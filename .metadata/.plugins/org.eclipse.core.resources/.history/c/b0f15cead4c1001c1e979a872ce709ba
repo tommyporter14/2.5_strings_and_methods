@@ -1,0 +1,14 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StringMethodsTest {
+
+	@Test
+	void testReverse() {
+		String expected = "yrag";
+		String actual = StringMethods.reverse("gary");
+		assertEquals(expected, actual);
+	}
+
+}

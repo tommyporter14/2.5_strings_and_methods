@@ -1,0 +1,28 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StringMethodsTest {
+
+	@Test
+	void testReverse() {
+		String expected = "yrag";
+		String actual = StringMethods.reverse("gary");
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void testSoLong() {
+		String expected = "string";
+		String actual = StringMethods.soLong("string", "int");
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testAfterMath() {
+		String expected = "mathamatics test";
+		String actual = StringMethods.afterMath("she aced the mathamatics test");
+		assertEquals(expected, actual);
+	}
+}
+
